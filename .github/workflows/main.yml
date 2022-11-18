@@ -24,7 +24,7 @@ jobs:
     environment:
       name: homologação
       url: 'felipetsuchiya.github.io'
-    needs: build
+    needs: deploy-dev
     steps:
     - name: Run a one-line script
       run: echo Deploy homologação!
@@ -34,7 +34,7 @@ jobs:
     environment:
       name: produção
       url: 'felipetsuchiya.github.io'
-    needs: build
+    needs: deploy-hmg
     steps:
     - name: Run a one-line script
       run: echo Deploy produção!
